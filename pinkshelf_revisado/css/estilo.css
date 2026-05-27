@@ -775,7 +775,92 @@ tr:hover td {
    justify-content: center;
    margin-top: 20px;
 }
+/* =========================
+   RODAPÉ
+========================= */
 
+.rodape{
+    background-color: #ed5b9a;
+    margin-top: 60px;
+    padding-top: 40px;
+}
+
+/* Caixa principal */
+.rodape-conteudo{
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Cada coluna */
+.rodape-box{
+    width: 250px;
+}
+
+/* Títulos */
+.rodape-box h2,
+.rodape-box h3{
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Textos */
+.rodape-box p{
+    color: #fff;
+    line-height: 25px;
+}
+
+/* Links */
+.rodape-box a{
+    display: block;
+
+    color: white;
+    text-decoration: none;
+
+    margin-bottom: 10px;
+
+    transition: 0.3s;
+}
+
+/* Parte final */
+.rodape-final{
+    background-color: #ee8ea4;
+
+    text-align: center;
+
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Texto final */
+.rodape-final p{
+    color: white;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media screen and (max-width: 768px){
+
+    .rodape-conteudo{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape-box{
+        width: 100%;
+    }
+
+}
 /* RESPONSIVO */
 @media(max-width:780px) {
    .localizacao-pagina {
